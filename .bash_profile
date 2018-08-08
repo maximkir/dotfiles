@@ -38,3 +38,13 @@ done
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
+
+which kubectl &> /dev/null
+
+if [ $? -eq 0 ]; then
+	source <(kubectl completion bash)
+fi
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then 
+	. $(brew --prefix)/etc/bash_completion
+fi
