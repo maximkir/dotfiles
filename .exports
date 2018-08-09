@@ -9,3 +9,15 @@ export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+
+if [ -n "${KUBECONFIG}" ]; then
+    KUBECONFIG=$KUBECONFIG:$HOME/.kube/config
+else
+    KUBECONFIG=$HOME/.kube/config
+fi    
+
+for kube_config_file in $(find $HOME/tools/config/kubectl-config -type f); do
+    KUBECONFIG=${KUBECONFIG}:${kube_config_file}
+done
+
+export KUBECONFIG
