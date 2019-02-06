@@ -48,3 +48,8 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then 
 	. $(brew --prefix)/etc/bash_completion
 fi
+
+which aws_completer &> /dev/null
+if [ $? -eq 0 ]; then
+	complete -C '$(aws_completer)' aws
+fi
