@@ -15,6 +15,13 @@ cask install transmission 2> /dev/null
 cask install ukelele 2> /dev/null
 cask install vlc 2> /dev/null
 
-# QuickLook plugins
-cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
-cask install quicklook-csv betterzipql webp-quicklook
+
+# JDK's
+cask install java8  # Java 8
+cask install java   # Latest version
+
+# IDE's
+cask install intellij-idea
+
+# Useful Apps
+cask install alfred
