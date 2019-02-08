@@ -17,11 +17,13 @@ cask install vlc 2> /dev/null
 
 
 # JDK's
-cask install java8  # Java 8
-cask install java   # Latest version
+cask install java8 2> /dev/null      # Java 8
+cask install java 2> /dev/null      # Latest version
 
 # IDE's
-cask install intellij-idea
+cask install intellij-idea 2> /dev/null
 
 # Useful Apps
-cask install alfred
+cask install alfred 2> /dev/null
+cask install whatsapp 2> /dev/null
+cask install postman 2> /dev/null

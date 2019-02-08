@@ -290,6 +290,7 @@ function o() {
         fi
 }
 
+# Java staff
 
 use-java-8 () {
     export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
@@ -306,4 +307,11 @@ print-java-version() {
     echo "Using Java $1"
     echo ""
     java -version
+}
+
+
+# Docker staff
+
+clean-docker-dangling-images () {
+    docker rmi -f $(docker images -f "dangling=true" -q)
 }
