@@ -8,6 +8,10 @@ function doIt() {
 	        --exclude "sync.sh" \
 	        --exclude "README.md" \
 	        --exclude ".idea/" \
+	        --exclude ".brew" \
+	        --exclude ".osx" \
+	        --exclude "Caskfile" \
+	        --exclude "install-deps.sh" \
 	        --archive \
 	        --verbose \
 	        . \
