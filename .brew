@@ -31,6 +31,11 @@ brew install tree
 # AWS CLI
 brew install awscli
 
+# CLI for bluetooth on OSX: power, discoverable state, etc.
+brew install blueutil
+
+# Groovy SDK
+brew install groovy
 
 # Remove outdated versions from the cellar
 brew cleanup

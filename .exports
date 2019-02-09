@@ -9,3 +9,10 @@ export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+
+# Tools
+
+# Groovy SDK installed by brew during first setup (see .brew)
+if [ -d /usr/local/opt/groovy/libexec ]; then
+    export GROOVY_HOME=/usr/local/opt/groovy/libexec
+fi

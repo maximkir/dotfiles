@@ -10,11 +10,11 @@ This repo contains my personal dotfiles and are heavily based on [paul](https://
 * My Sublime Text build files (Grunt, Yeoman, r.js, SASS, Less and a few others included)
 * [@cowboy](http://github.com/cowboy)'s GitHub Pull Request Helper
 
-## install the neccessary apps
+## Install the neccessary apps
 
 My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.
 
-## private config
+## Private config
 
 Toss it into a file called `.extra` which you do not commit to this repo and just keep in your `~/`
 
@@ -89,7 +89,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 * `.functions`
 * `.extra` - not included, explained above
 
-#### manual run
+#### Manual run
 * `install-deps.sh` - random apps i need installed
 * `.osx` - run on a fresh osx machine
 * `.brew` - homebrew intialization
