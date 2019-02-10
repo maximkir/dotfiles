@@ -1,14 +1,10 @@
 # Maxim's dotfiles.
 
-This repo contains my personal dotfiles and are heavily based on [paul](https://github.com/paulirish/dotfiles/) and [mathias](https://github.com/mathiasbynens/dotfiles/)'s.
+This repo contains my personal dotfiles and are heavily based on [addy](https://github.com/addyosmani/dotfiles)'s.
 
 ## Some differences
 
-* Browserstack shortcuts which will launch the service and automatically load up a specific OS/Browser pair with your URL. e.g `win7ie8 "http://google.com"`, `ipad3 "http://google.com"`, `ipad3ios6 "http://google.com"`,`androidnexus "http://google.com"` etc. If you would prefer to work locally similarly use `ipad3 "http://localhost:3000"`
-* Browser and npm aliases e.g `chrome`, `safari`, `opera`, `firefox`, `chromium` and others.
-* Launch all browsers with a specific URL `browsers "http://google.com"`
-* My Sublime Text build files (Grunt, Yeoman, r.js, SASS, Less and a few others included)
-* [@cowboy](http://github.com/cowboy)'s GitHub Pull Request Helper
+* Various scripts that used by launch daemon
 
 ## Install the neccessary apps
 

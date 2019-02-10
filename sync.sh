@@ -27,8 +27,8 @@ function addScriptsToLaunchDaemon() {
         rm -f ~/Library/LaunchAgents/${myPlistFile}.bak
 
         echo "Adding Scripts to Launch Daemon of OSX: ~/Library/LaunchAgents/${myPlistFile}"
-        launchctl unload -w ~/Library/LaunchAgents/${myPlistFile}
-        launchctl load -w ~/Library/LaunchAgents/${myPlistFile}
+        launchctl unload -w ~/Library/LaunchAgents/${myPlistFile} 2> /dev/null
+        launchctl load -w ~/Library/LaunchAgents/${myPlistFile} 2> /dev/null
     done
 }
 
