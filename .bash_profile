@@ -6,10 +6,10 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
-. ~/dotfiles/z/z.sh
+[[ -f ~/dotfiles/z/z.sh ]] && . ~/dotfiles/z/z.sh
 
 # init rvm
-source ~/.rvm/scripts/rvm
+[[ -f ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
 
 # Case-insensitive globbing (used in pathname expansion)

@@ -313,5 +313,9 @@ print-java-version() {
 # Docker staff
 
 clean-docker-dangling-images () {
-    docker rmi -f $(docker images -f "dangling=true" -q)
+    docker rmi -f $(docker images -f "dangling=true" -q) 2> /dev/null
+}
+
+clean-docker-dangling-volumes () {
+    docker volume rm $(docker volume ls -qf dangling=true) 2> /dev/null
 }

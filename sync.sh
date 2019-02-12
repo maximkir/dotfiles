@@ -40,7 +40,7 @@ else
 	echo
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		doIt
-		addScriptsToLaunchDaemon
+		[[ "$OSTYPE" == "darwin"* ]] && addScriptsToLaunchDaemon
 	fi
 fi
 unset doIt addScriptsToLaunchDaemon
