@@ -25,7 +25,7 @@ alias xcode="open -a '/Developer/Applications/Xcode.app'"
 alias safari="open -a safari"
 alias chrome="open -a google\ chrome"
 alias f='open -a Finder'
-alias gpr="~/code/gpr $1"
+#alias gpr="~/code/gpr $1"
 
 # Thanks to stefanpenner for this one.
 # https://www.youtube.com/watch?v=SMWi7CLoZ2Q

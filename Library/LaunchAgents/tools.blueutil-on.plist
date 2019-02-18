@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>maximkir.blueutil-on.plist</string>
+	<string>tools.blueutil-on</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>USER_HOME/blueutil/turn_on_bluetooth.sh</string>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>maximkir.blueutil-off.plist</string>
+	<string>tools.blueutil-off</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>USER_HOME/blueutil/turn_off_bluetooth.sh</string>
