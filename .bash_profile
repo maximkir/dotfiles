@@ -39,8 +39,12 @@ done
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
-which kubectl &> /dev/null
-[[ $? -eq 0 ]] && source <(kubectl completion bash)
+# Load kubectl completion
+if type kubectl &>/dev/null; then
+    source <(kubectl completion bash)
+fi
 
-which brew &> /dev/null
-[[ $? -eq 0 ]] && [[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
+# Load brew completion
+if type brew &>/dev/null; then
+    . $(brew --prefix)/etc/bash_completion
+fi

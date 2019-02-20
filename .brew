@@ -18,9 +18,7 @@ brew install bash
 brew install wget --enable-iri
 
 # Install more recent versions of some OS X tools
-brew tap homebrew/dupes
-brew install homebrew/dupes/grep
-brew tap josegonzalez/homebrew-php
+brew tap homebrew/homebrew-core
 
 # Install everything else
 brew install ack
@@ -36,6 +34,42 @@ brew install blueutil
 
 # Groovy SDK
 brew install groovy
+
+# Gradle
+brew install gradle
+
+# Shell Completion
+brew install bash-completion
+
+
+########### Casks ###########
+
+brew tap homebrew/cask-versions
+
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install sublime-text
+brew cask install the-unarchiver
+brew cask install transmission
+brew cask install vlc
+
+# JDK's
+brew cask install java8
+brew cask install java
+
+# IDE's
+brew cask install intellij-idea
+
+# Useful Apps
+brew cask install alfred
+brew cask install whatsapp
+brew cask install postman
+brew cask install visualvm
+brew cask install docker
+
+########### Casks ###########
+
+brew install docker-completion docker-compose-completion
 
 # Remove outdated versions from the cellar
 brew cleanup
