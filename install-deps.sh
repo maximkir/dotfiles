@@ -8,7 +8,8 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 
 # homebrew!
 # you need the code CLI tools YOU FOOL.
-[[ "$OSTYPE" == "darwin"* ]] && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+[[ "$OSTYPE" == "darwin"* ]] && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" \
+    </dev/null # https://stackoverflow.com/questions/25535407/bypassing-prompt-to-press-return-in-homebrew-install-script
 
 # https://github.com/rupa/z
 # z, oh how i love you
