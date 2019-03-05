@@ -6,7 +6,7 @@ This repo contains my personal dotfiles and are heavily based on [addy](https://
 
 * Various scripts that used by launch daemon
 
-## Install the neccessary apps
+## Install the necessary apps
 
 My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.
 
@@ -29,30 +29,7 @@ export PATH
 ```
 
 ## Syntax highlighting
-
-…is really important. even for these files.
-
-add the below to this file: `~/Library/Application Support/Sublime Text 3/Packages/ShellScript/Shell-Unix-Generic.tmLanguage`
-
-```xml
-<string>.aliases</string>
-<string>.bash_profile</string>
-<string>.bash_prompt</string>
-<string>.bashrc</string>
-<string>.brew</string>
-<string>.exports</string>
-<string>.functions</string>
-<string>.git</string>
-<string>.gitattributes</string>
-<string>.gitconfig</string>
-<string>.gitignore</string>
-<string>.inputrc</string>
-<string>.osx</string>
-<string>.vim</string>
-<string>.vimrc</string>
-```
-
-
+TBD
 
 ### Sensible OS X defaults
 

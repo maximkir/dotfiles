@@ -52,6 +52,11 @@ brew tap homebrew/cask-versions
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install sublime-text
+
+# Install the subl command line tool
+[[ -f /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ]] \
+	&& ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+
 brew cask install the-unarchiver
 brew cask install transmission
 brew cask install vlc
