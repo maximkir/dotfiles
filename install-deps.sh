@@ -8,7 +8,7 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 
 # homebrew!
 # you need the code CLI tools YOU FOOL.
-[[ "$OSTYPE" == "darwin"* ]] && ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
+[[ "$OSTYPE" == "darwin"* ]] && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # https://github.com/rupa/z
 # z, oh how i love you
