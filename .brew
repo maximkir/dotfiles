@@ -35,11 +35,6 @@ brew install awscli
 # CLI for bluetooth on OSX: power, discoverable state, etc.
 brew install blueutil
 
-# Groovy SDK
-brew install groovy
-
-# Gradle
-brew install gradle
 
 # Shell Completion
 brew install bash-completion
@@ -76,6 +71,15 @@ brew cask install visualvm
 brew cask install docker
 
 ########### Casks ###########
+
+# dependes on java cask
+
+# Groovy SDK
+brew install groovy
+
+# Gradle 
+brew install gradle
+
 
 brew install docker-completion docker-compose-completion
 
