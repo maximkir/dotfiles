@@ -14,8 +14,8 @@ brew install findutils
 # Install Bash 4
 brew install bash
 
-# Install wget with IRI support
-brew install wget --enable-iri
+# wget
+brew install wget
 
 # z hopping around folders
 brew install z
@@ -39,42 +39,61 @@ brew install blueutil
 # Shell Completion
 brew install bash-completion
 
-
+#############################
 ########### Casks ###########
+#############################
 
 brew tap homebrew/cask-versions
 
+# Google Chrome
 brew cask install google-chrome
+
+# iTerm
 brew cask install iterm2
+
+# Sublime text editor
 brew cask install sublime-text
 
 # Install the subl command line tool
 [[ -f /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ]] \
 	&& ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
+# Unarchiver
 brew cask install the-unarchiver
+
+# Transmission
 brew cask install transmission
+
+# VLC
 brew cask install vlc
 
 # JDK's
 brew cask install java8
 brew cask install java
 
-# IDE's
+# Intellij Idea
 brew cask install intellij-idea
 
-# Useful Apps
+# Alfred
 brew cask install alfred
+
+# Whatsaap
 brew cask install whatsapp
+
+# Postman
 brew cask install postman
+
+# VisualVM
 brew cask install visualvm
+
+# Docker
 brew cask install docker
 
-########### Casks ###########
+#############################
+##### Casks Dependants ######
+#############################
 
-# dependes on java cask
-
-# Groovy SDK
+# Groovy
 brew install groovy
 
 # Gradle 
