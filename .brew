@@ -74,6 +74,9 @@ brew cask install java
 # Intellij Idea
 brew cask install intellij-idea
 
+# Pycharm Community Edition
+brew cask install pycharm-ce
+
 # Alfred
 brew cask install alfred
 
