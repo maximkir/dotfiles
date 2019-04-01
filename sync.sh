@@ -18,20 +18,6 @@ function doIt() {
 	        ~
 }
 
-function addScriptsToLaunchDaemon() {
-
-    for myPlistFile in $(find Library/LaunchAgents/ -name *.plist -type f -exec basename {} \;)
-    do
-        # Using '@' as delimiter since '$HOME' will probably contain a slashes
-        sed -i.bak "s@USER_HOME@${HOME}@g" ~/Library/LaunchAgents/${myPlistFile}
-        rm -f ~/Library/LaunchAgents/${myPlistFile}.bak
-
-        echo "Adding Scripts to Launch Daemon of OSX: ~/Library/LaunchAgents/${myPlistFile}"
-        launchctl unload -w ~/Library/LaunchAgents/${myPlistFile} 2> /dev/null
-        launchctl load -w ~/Library/LaunchAgents/${myPlistFile} 2> /dev/null
-    done
-}
-
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
@@ -40,7 +26,6 @@ else
 	echo
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		doIt
-		[[ "$OSTYPE" == "darwin"* ]] && addScriptsToLaunchDaemon
 	fi
 fi
 unset doIt addScriptsToLaunchDaemon

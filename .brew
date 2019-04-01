@@ -35,10 +35,6 @@ brew install tree
 # AWS CLI
 brew install awscli
 
-# CLI for bluetooth on OSX: power, discoverable state, etc.
-brew install blueutil
-
-
 # Shell Completion
 brew install bash-completion
 
