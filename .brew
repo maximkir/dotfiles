@@ -41,6 +41,9 @@ brew install awscli
 # Shell Completion
 brew install bash-completion
 
+# Ansible
+brew install ansible
+
 #############################
 ########### Casks ###########
 #############################
