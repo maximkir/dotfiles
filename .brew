@@ -97,6 +97,9 @@ brew cask install visualvm
 # Docker
 brew cask install docker
 
+# Meld
+brew cask install meld
+
 #############################
 ##### Casks Dependants ######
 #############################
