@@ -27,19 +27,23 @@
   changed = green
   untracked = cyan
 [diff]
-  tool = meld
+  tool = bcomp
 [difftool]
   prompt = false
-[difftool "meld"]
   trustExitCode = true
+[difftool "meld"]
   cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
+[difftool "bcomp"]
+  cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
 [merge]
-  tool = meld
+  tool = bcomp
 [mergetool]
   prompt = false
-[mergetool "meld"]
   trustExitCode = true
+[mergetool "meld"]
   cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
+[mergetool "bcomp"]
+  cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 [url "git@github.com:"]
   insteadOf = "gh:"
   pushInsteadOf = "github:"
@@ -52,7 +56,6 @@
   pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
-
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
 [url "git@github.com:maximkir/"]
